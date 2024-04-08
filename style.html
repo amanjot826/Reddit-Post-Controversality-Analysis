@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REDDIT CONTROVERSIAL CONTENT ANALYZER</title>
+    <!-- Link the CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Your HTML content goes here -->
+    <div class="container">
+        <img src="reddit_logo.png" alt="Reddit Logo" class="reddit-logo"> <!-- Add Reddit logo -->
+        <h1 class="title">REDDIT CONTROVERSIAL CONTENT ANALYZER</h1>
+        <textarea id="postBody" placeholder="Enter post body..."></textarea>
+        <button onclick="analyzePost()" class="btn">Analyze Post</button>
+        <textarea id="commentInput" placeholder="Enter Reddit comment text here..."></textarea>
+        <button onclick="analyzeComment()" class="btn">Analyze Comment</button>
+        <div>
+            <input type="file" id="imageInput" accept="image/*">
+            <button onclick="analyzeImage()" class="btn">Analyze Image</button>
+        </div>
+        <div id="analysisResult" class="prediction"></div>
+    </div>
+
+    <!-- Include JavaScript for comment, post, and image analysis -->
+    <script src="script.js"></script>
+</body>
+</html>
